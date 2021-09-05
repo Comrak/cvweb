@@ -1,0 +1,74 @@
+.profile {
+  position: relative;
+  top: -84px;
+  width: 100%;
+  z-index: 0;
+  .wallpaper {
+    background: linear-gradient(odeg, #00000088 30%, #ffffff44 100%);
+    background-image: url("../../images/fondoPerfil.jpg");
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+  }
+
+  .dark {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+  }
+
+  .box {
+    position: relative;
+    margin-top: -400px;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+
+    .info {
+      padding: 50px;
+
+      &__data {
+        //$__data es lo mismo que escribir info__data pues toma info del padre
+        > span {
+          //el mayor que es para indicarle que esto hace referencia al primer span que encuentre
+          background-color: #0098d3;
+          font-weight: bold;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 4px;
+        }
+        > p:first-of-type {
+          //de esta forma le decimos que solo actue sobre el primer parrafo que encuentre
+          margin: 10px 0 0 0;
+          font-weight: 600;
+          font-size: 40px;
+        }
+
+        .more-info {
+          .item {
+            display: flex;
+
+            p {
+              &:first-of-type {
+                width: 25%;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+              &:last-of-type {
+                width: 75%;
+                color: #a2a2a2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
