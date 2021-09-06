@@ -1,7 +1,7 @@
 import React from "react"
 import { Row, Col, Container, Image } from "react-bootstrap"
 import Social from "./Social/Social"
-import profileAvatar from "../../images/avatar.jpeg"
+import profileAvatar from "./../../images/avatar.jpeg"
 import "./profile.scss"
 
 export default function Profile() {
